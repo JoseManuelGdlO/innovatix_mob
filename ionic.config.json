@@ -1,0 +1,7 @@
+{
+  "name": "inmobiliaria_innovatix",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
