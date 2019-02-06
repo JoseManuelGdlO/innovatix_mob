@@ -30,4 +30,36 @@ export class HttpProvider {
    });
   }
 
+
+  revisarBase(){
+ 
+    //alert(usuario+contra);
+   
+   var url = 'http://avisositd.xyz/mobiliaria/ListaMobiliario.php';
+   return new Promise((resolve, reject) => {
+    this.http.get(url)
+       .subscribe(data => {
+         resolve(data);
+        }, (err) =>{
+          reject(err);
+        });
+   });
+  }
+
+
+  disponibilidadFecha(fecha_envio_evento: string){
+ 
+    //alert(usuario+contra);
+   
+   var url = 'http://avisositd.xyz/mobiliaria/sacarDisponiblesDelDia.php?fecha_envio_evento='+fecha_envio_evento;
+   return new Promise((resolve, reject) => {
+    this.http.get(url)
+       .subscribe(data => {
+         resolve(data);
+        }, (err) =>{
+          reject(err);
+        });
+   });
+  }
+
 }

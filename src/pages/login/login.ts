@@ -5,6 +5,7 @@ import { LoadingController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { ToastController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the LoginPage page.
@@ -52,6 +53,13 @@ export class LoginPage {
   public notify() {
     console.log("Recuerdame es: "+ this.recuerda);
     //alert(this.recuerda);
+  }
+
+
+  iniciar(){
+    this.navCtrl.push(TabsPage, {
+      data: this.id
+    });
   }
 
 

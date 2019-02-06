@@ -13,25 +13,38 @@ import { HttpProvider } from '../providers/http/http';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCalendarModule  } from 'ionic2-calendar';
 
+import { TabsPage } from '../pages/tabs/tabs';
+import { AdministracionPage } from '../pages/administracion/administracion';
+import { RepartosPage }  from '../pages/repartos/repartos';
+import { CotizarPage } from '../pages/cotizar/cotizar';
+ 
 
 @NgModule({
   declarations: [  
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    TabsPage,
+    AdministracionPage,
+    RepartosPage,
+    CotizarPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
     IonicStorageModule.forRoot(),
-    NgCalendarModule
+   // NgCalendarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    TabsPage,
+    AdministracionPage,
+    RepartosPage,
+    CotizarPage
   ],
   providers: [
     StatusBar,
