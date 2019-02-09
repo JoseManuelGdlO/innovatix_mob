@@ -31,12 +31,12 @@ export class LoginPage {
 
 
     this.storage.get('USU').then((usu) =>{
-      console.log("Usuario"+usu);
+    //  console.log("Usuario=  "+usu);
       this.usuario = usu;
     });
 
     this.storage.get('PASS').then((pass) =>{
-      console.log("Contrasena"+pass);
+    //  console.log("Contrasena=   "+pass);
       this.contra = pass;
     });   
    
@@ -51,7 +51,7 @@ export class LoginPage {
   }
 
   public notify() {
-    console.log("Recuerdame es: "+ this.recuerda);
+  //  console.log("Recuerdame es: "+ this.recuerda);
     //alert(this.recuerda);
   }
 
@@ -70,9 +70,9 @@ export class LoginPage {
       this.storage.set('USU',this.usuario);
       this.storage.set('PASS',this.contra);
       this.storage.set('NUM', 1);
-      console.log("Guardaste"+this.usuario+this.contra);
+    //  console.log("Guardaste"+this.usuario+this.contra);
     }else{
-      console.log("No vas a guardar DATOS");
+     // console.log("No vas a guardar DATOS");
     }
 
 
@@ -86,7 +86,7 @@ export class LoginPage {
 
     this.http.login(this.usuario,this.contra).then(
       (data) => { 
-        console.log(data)  
+      //  console.log(data)  
 
 
 

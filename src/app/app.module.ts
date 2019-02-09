@@ -17,6 +17,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { AdministracionPage } from '../pages/administracion/administracion';
 import { RepartosPage }  from '../pages/repartos/repartos';
 import { CotizarPage } from '../pages/cotizar/cotizar';
+import { CrearEventoPage } from '../pages/crear-evento/crear-evento';
  
 
 @NgModule({
@@ -27,7 +28,8 @@ import { CotizarPage } from '../pages/cotizar/cotizar';
     TabsPage,
     AdministracionPage,
     RepartosPage,
-    CotizarPage
+    CotizarPage,
+    CrearEventoPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { CotizarPage } from '../pages/cotizar/cotizar';
     TabsPage,
     AdministracionPage,
     RepartosPage,
-    CotizarPage
+    CotizarPage,
+    CrearEventoPage
   ],
   providers: [
     StatusBar,
